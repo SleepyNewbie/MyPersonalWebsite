@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      /* Style the table */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      /* Style the table header */
+      th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        text-align: left;
+      }
+
+      /* Style the table cells */
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      /* Style the form input fields */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      /* Style the submit, clear, and cancel buttons */
+      button[type=submit], button[type=button], button[type=reset] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-left: 10px;
+      }
+
+      /* Style the forgot password and sign up links */
+      a {
+        text-decoration: none;
+        color: #4CAF50;
+        margin-top: 10px;
+      }
+      
+      /* Style the sign up button */
+      #signup-btn {
+        float: left;
+      }
+    </style>
+  </head>
+<body>
+<form id="signup-form">
+  <table>
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" name="firstname" id="firstname"></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" name="lastname" id="lastname"></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" name="gender" value="male" id="gender-male">Male
+        <input type="radio" name="gender" value="female" id="gender-female">Female
+      </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td>
+        <input type="text" name="address1" id="address1" placeholder="Address 1"><br>
+        <input type="text" name="address2" id="address2" placeholder="Address 2"><br>
+        <input type="text" name="city" id="city" placeholder="City"><br>
+        <select name="state" id="state">
+          <option>--Select State--</option>
+          <option>Perlis</option>
+          <option>Kedah</option>
+          <option>Pulau Pinang</option>
+          <option>Kelantan</option>
+		  <option>Melaka</option>
+		  <option>Selangor</option>
+		  <option>Kuala Lumpur</option>
+		  <option>Putrajaya</option>
+		  <option>Negeri Sembilan</option>
+		  <option>Pahang</option>
+		  <option>Perak</option>
+		  <option>Sarawak</option>
+		  <option>Sabah</option>
+		  <option>Johor</option>
+		  <option>Terengganu</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type="tel" name="phone" id="phone"></td>
+    </tr>
+    <tr>
+      <td>Email Address:</td>
+      <td><input type="email" name="email" id="email"></td>
+    </tr>
+    <tr>
+      <td>Educational Background:</td>
+      <td>
+        <input type="checkbox" name="edu[]" value="SPM" id="edu-spm">SPM<br>
+        <input type="checkbox" name="edu[]" value="Diploma" id="edu-diploma">Diploma<br>
+        <input type="checkbox" name="edu[]" value="Degree" id="edu-degree">Degree<br>
+        <input type="checkbox" name="edu[]" value="Master" id="edu-master">Master<br>
+        <input type="checkbox" name="edu[]" value="PhD" id="edu-phd">PhD<br>
+       
+      </td>
+    </tr>
+    <tr>
+      <td>User Name:</td>
+      <td><input type="text" name="username" id="username"></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="password" id="password"></td>
+    </tr>
+    <tr>
+      <td>Re-Enter Password:</td>
+      <td><input type="password" name="repassword" id="repassword"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        <input type="button" value="Cancel"></td>
+      </tr>
+</table>
+</form>
+</body>
+</html>
